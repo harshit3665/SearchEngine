@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(243, 241, 241);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.templateContainer {
+    margin: 5% 0;
+}
+
+.templateContainer .searchInput_Container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.templateContainer .searchInput_Container input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.templateContainer .template_Container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+    justify-items: center;
+}
+
+.templateContainer .template_Container .template {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.templateContainer .template_Container .template:hover {
+    transform: translateY(-5px);
+}
+
+.templateContainer .template_Container .template img {
+    height: 250px;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.templateContainer .template_Container .template h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.templateContainer .template_Container .template p {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
+}
+.not-found {
+    text-align: center;
+    font-size: 1.8rem;
+    color:rgb(31, 29, 29); /* Soft red tone */
+    margin-top: 40px;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Optional: Fade-in effect */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
